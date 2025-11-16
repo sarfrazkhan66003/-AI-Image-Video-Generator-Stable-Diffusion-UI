@@ -8,15 +8,16 @@
   This project combines image generation + anime cinematic video generation using prompt-based diffusion.
 
 ## ⭐ Overview
-  This project provides an interactive AI media generation tool built on top of the Diffusers library.
-      - It includes:
-        - A powerful UI using ipywidgets
-        - High-quality image generation
-        - Video generation using frame-by-frame motion prompts
-        - Options for negative prompts, guidance scale, inference steps
-        - Customizable aspect ratios (1:1, 4:3, 9:16, 21:9, etc.)
-        - Save & download images/videos directly from Colab
-      - 🎯 Designed for creators, researchers, and developers who want Stable Diffusion + cinematic video without complex code.
+
+This project provides an interactive AI media generation tool built on top of the Diffusers library.
+    - It includes:
+      - A powerful UI using ipywidgets
+      - High-quality image generation
+      - Video generation using frame-by-frame motion prompts
+      - Options for negative prompts, guidance scale, inference steps
+      - Customizable aspect ratios (1:1, 4:3, 9:16, 21:9, etc.)
+      - Save & download images/videos directly from Colab
+    - 🎯 Designed for creators, researchers, and developers who want Stable Diffusion + cinematic video without complex code.
 
 ## 🚀 Features
 
@@ -110,19 +111,19 @@
 
 ## 🧮 Algorithm Explanation
 
-  1. Stable Diffusion Image Generation
-     Input Prompt → Tokenizer → Text Embedding
-          ↓
-          U-Net Denoising Loop (Steps 5–80)
-          ↓
-      Latent → VAE Decoder → RGB Image
+1. Stable Diffusion Image Generation
+   Input Prompt → Tokenizer → Text Embedding
+        ↓
+        U-Net Denoising Loop (Steps 5–80)
+        ↓
+   Latent → VAE Decoder → RGB Image
   
-  2. Video Generation Algorithm
-     for each frame (0 → N):
-      t = normalize(frame_index)
-      motion_prompt = base_prompt + zoom_factor(t)
-      img = stable_diffusion(motion_prompt)
-      save img
+2. Video Generation Algorithm
+   for each frame (0 → N):
+    t = normalize(frame_index)
+    motion_prompt = base_prompt + zoom_factor(t)
+    img = stable_diffusion(motion_prompt)
+    save img
   combine frames → MP4
 
 ## 🖥️ UI Components
