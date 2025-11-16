@@ -113,20 +113,20 @@
 
 - 1. Stable Diffusion Image Generation
      
-     Input Prompt → Tokenizer → Text Embedding
-          ↓
-          U-Net Denoising Loop (Steps 5–80)
-          ↓
-     Latent → VAE Decoder → RGB Image
+ Input Prompt → Tokenizer → Text Embedding
+    ↓
+    U-Net Denoising Loop (Steps 5–80)
+    ↓
+Latent → VAE Decoder → RGB Image
   
 - 2. Video Generation Algorithm
      
-     for each frame (0 → N):
-      t = normalize(frame_index)
-      motion_prompt = base_prompt + zoom_factor(t)
-      img = stable_diffusion(motion_prompt)
-      save img
-    combine frames → MP4
+for each frame (0 → N):
+  t = normalize(frame_index)
+  motion_prompt = base_prompt + zoom_factor(t)
+  img = stable_diffusion(motion_prompt)
+  save img
+combine frames → MP4
 
 ## 🖥️ UI Components
 
