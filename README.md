@@ -10,14 +10,14 @@
 ## ⭐ Overview
 
   This project provides an interactive AI media generation tool built on top of the Diffusers library.
-  It includes:
-    - A powerful UI using ipywidgets
-    - High-quality image generation
-    - Video generation using frame-by-frame motion prompts
-    - Options for negative prompts, guidance scale, inference steps
-    - Customizable aspect ratios (1:1, 4:3, 9:16, 21:9, etc.)
-    - Save & download images/videos directly from Colab
-  🎯 Designed for creators, researchers, and developers who want Stable Diffusion + cinematic video without complex code.
+    It includes:
+      - A powerful UI using ipywidgets
+      - High-quality image generation
+      - Video generation using frame-by-frame motion prompts
+      - Options for negative prompts, guidance scale, inference steps
+      - Customizable aspect ratios (1:1, 4:3, 9:16, 21:9, etc.)
+      - Save & download images/videos directly from Colab
+    🎯 Designed for creators, researchers, and developers who want Stable Diffusion + cinematic video without complex code.
 
 ## 🚀 Features
 
