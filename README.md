@@ -9,7 +9,7 @@
 
 ## ⭐ Overview
 
-This project provides an interactive AI media generation tool built on top of the Diffusers library.
+- This project provides an interactive AI media generation tool built on top of the Diffusers library.
     - It includes:
       - A powerful UI using ipywidgets
       - High-quality image generation
