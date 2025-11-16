@@ -8,7 +8,6 @@
   This project combines image generation + anime cinematic video generation using prompt-based diffusion.
 
 ## ⭐ Overview
-
   This project provides an interactive AI media generation tool built on top of the Diffusers library.
       - It includes:
         - A powerful UI using ipywidgets
@@ -52,11 +51,11 @@
 
 ## 📁 Project Structure
 
-  ├── cinematic_video_sd.py      # Cinematic video generator
-  ├── sd_image_video_ui.ipynb    # Main Colab interface (UI + video)
-  ├── video_frames/              # Auto-generated video frames
-  ├── generated_video.mp4        # Final video output
-  └── README.md                  # Documentation
+    ├── cinematic_video_sd.py      # Cinematic video generator
+    ├── sd_image_video_ui.ipynb    # Main Colab interface (UI + video)
+    ├── video_frames/              # Auto-generated video frames
+    ├── generated_video.mp4        # Final video output
+    └── README.md                  # Documentation
 
 ##🧠 System Architecture
 
