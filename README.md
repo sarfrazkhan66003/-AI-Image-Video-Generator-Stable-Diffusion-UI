@@ -10,14 +10,14 @@
 ## ⭐ Overview
 
   This project provides an interactive AI media generation tool built on top of the Diffusers library.
-    It includes:
-      - A powerful UI using ipywidgets
-      - High-quality image generation
-      - Video generation using frame-by-frame motion prompts
-      - Options for negative prompts, guidance scale, inference steps
-      - Customizable aspect ratios (1:1, 4:3, 9:16, 21:9, etc.)
-      - Save & download images/videos directly from Colab
-    🎯 Designed for creators, researchers, and developers who want Stable Diffusion + cinematic video without complex code.
+      - It includes:
+        - A powerful UI using ipywidgets
+        - High-quality image generation
+        - Video generation using frame-by-frame motion prompts
+        - Options for negative prompts, guidance scale, inference steps
+        - Customizable aspect ratios (1:1, 4:3, 9:16, 21:9, etc.)
+        - Save & download images/videos directly from Colab
+      - 🎯 Designed for creators, researchers, and developers who want Stable Diffusion + cinematic video without complex code.
 
 ## 🚀 Features
 
@@ -60,54 +60,54 @@
 
 ##🧠 System Architecture
 
-   User Input
-       ↓
-  ( Prompts / Settings / Resolution )
-       ↓
-  Stable Diffusion Pipeline (Diffusers)
-       ↓
-   Text Encoder → UNet → VAE Decoder
-       ↓
-  Generated Images
-       ↓
-  Gallery Display & Downloads
-       ↓
-  [ OPTIONAL ]
-   Motion Prompt Generator
-       ↓
-   Frame-by-Frame Rendering
-       ↓
-   ImageIO Video Stitcher
-       ↓
-   Final Cinematic Video (MP4)
+       User Input
+           ↓
+      ( Prompts / Settings / Resolution )
+           ↓
+      Stable Diffusion Pipeline (Diffusers)
+           ↓
+       Text Encoder → UNet → VAE Decoder
+           ↓
+      Generated Images
+           ↓
+      Gallery Display & Downloads
+           ↓
+      [ OPTIONAL ]
+       Motion Prompt Generator
+           ↓
+       Frame-by-Frame Rendering
+           ↓
+       ImageIO Video Stitcher
+           ↓
+       Final Cinematic Video (MP4)
 
 ## 🔁 Workflow Diagram
 
-                 ┌────────────────────┐
-                 │  User Inputs (UI)  │
-                 └─────────┬──────────┘
-                           │
-                           ▼
-               ┌────────────────────────┐
-               │ Stable Diffusion 1.5   │
-               │ (DiffusionPipeline)    │
-               └─────────┬──────────────┘
-                         │
-                ┌────────┴─────────┐
-                ▼                  ▼
-     ┌─────────────────┐   ┌─────────────────┐
-     │ Image Generation │   │ Video Generator │
-     └───────┬─────────┘   └────────┬────────┘
-             │                      │
-             ▼                      ▼
-  ┌────────────────────┐   ┌────────────────────┐
-  │ Image Gallery UI   │   │ Frame Rendering     │
-  └─────────┬──────────┘   └────────┬───────────┘
-            │                       │
-            ▼                       ▼
-   ┌───────────────────┐   ┌─────────────────────┐
-   │  Save / Download  │   │ Video Stitch (MP4)   │
-   └───────────────────┘   └─────────────────────┘
+                     ┌────────────────────┐
+                     │  User Inputs (UI)  │
+                     └─────────┬──────────┘
+                               │
+                               ▼
+                   ┌────────────────────────┐
+                   │ Stable Diffusion 1.5   │
+                   │ (DiffusionPipeline)    │
+                   └─────────┬──────────────┘
+                             │
+                    ┌────────┴─────────┐
+                    ▼                  ▼
+         ┌─────────────────┐   ┌─────────────────┐
+         │ Image Generation │   │ Video Generator │
+         └───────┬─────────┘   └────────┬────────┘
+                 │                      │
+                 ▼                      ▼
+      ┌────────────────────┐   ┌────────────────────┐
+      │ Image Gallery UI   │   │ Frame Rendering     │
+      └─────────┬──────────┘   └────────┬───────────┘
+                │                       │
+                ▼                       ▼
+       ┌───────────────────┐   ┌─────────────────────┐
+       │  Save / Download  │   │ Video Stitch (MP4)   │
+       └───────────────────┘   └─────────────────────┘
 
 ## 🧮 Algorithm Explanation
 
